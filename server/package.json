@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "compiler": "nodemon ./microservices/compiler.js",
+    "transaction": "nodemon ./microservices/transaction.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "async": "^2.6.0",
+    "body-parser": "~1.18.2",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.5",
+    "mongoose": "^4.13.9",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth2": "^0.1.6",
+    "request": "^2.83.0",
+    "serve-favicon": "~2.4.5",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
